@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm Lazada</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { display: flex; flex-wrap: wrap; justify-content: center; }
+        .product { border: 1px solid #ddd; padding: 10px; margin: 10px; width: 250px; text-align: left; padding: 10px; }
+        .product h3 { font-size: 16px; margin: 5px 0; }
+        .product p { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Danh sách sản phẩm từ Lazada</h1>
+    <div class="container">
+        {% for product in products %}
+            <div class="product">
+                <h3>{{ product['name'] }}</h3>
+                <p>Giá: {{ product['price'] }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

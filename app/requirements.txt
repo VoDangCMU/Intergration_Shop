@@ -1,0 +1,8 @@
+flask
+selenium
+pymysql
+webdriver-manager
+beautifulsoup4
+requests
+pymysql
+cryptography
