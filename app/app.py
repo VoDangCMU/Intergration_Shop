@@ -40,27 +40,6 @@
 #     app.run(debug=True)
 
 
-# from flask import Flask, render_template
-# from db import get_db_connection
-
-# app = Flask(__name__)
-
-# def get_products():
-#     conn = get_db_connection()
-#     with conn.cursor() as cursor:
-#         cursor.execute("SELECT name, price FROM products")
-#         products = cursor.fetchall()
-#     conn.close()
-#     return products
-
-# @app.route("/")
-# def index():
-#     products = get_products()
-#     return render_template("index.html", products=products)
-
-# if __name__ == "__main__":
-#     app.run(host="0.0.0.0", port=5000, debug=True)
-
 
 from flask import Flask, render_template
 from db import get_db_connection
